@@ -1,0 +1,54 @@
+@import url('./App.css');
+
+.TodoItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8% 20px;
+}
+
+.TodoItem:last-child{
+    margin-bottom: 0px;
+}
+
+.TodoItem p{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+
+.TodoItem_checkButton{
+    padding: 0;
+    cursor: pointer;
+    margin-right: 32px;
+    width: 20px;
+    height: 20px;
+    
+}
+.TodoItem_checkButton input{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.TodoItem_task{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--sm);
+    font-weight: bold;
+    background-color: var(--white);
+    padding: 12px 12px;
+    border-radius: 8px;
+}
+
+.TodoItem_task.completed{
+    background-color: var(--primary);
+    font-style: italic;
+    text-decoration: line-through;
+    font-weight: 400;
+}

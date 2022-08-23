@@ -1,11 +1,16 @@
 import React from "react";
+import './TodoItem.css'
 
 function TodoItem(props){
     return(
-        <li>
-            <span>C</span>
-            <p>{props.text}</p>
-            <span>X</span>
+        <li className="TodoItem">
+            <label className="TodoItem_checkButton">
+                <input type="checkbox"/>
+            </label>
+            <div className={`TodoItem_task ${props.completed && 'completed'}`}>
+                <p>{props.text}</p>
+                <span>X</span>
+            </div>
         </li>
     )
 }

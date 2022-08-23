@@ -1,0 +1,42 @@
+@import url(./App.css);
+
+.TodoCounter{
+    /* Box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px 0;
+}
+
+.TodoCounter p{
+    display: inline;
+}
+
+.TodoCounter_data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-size: var(--bg);
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.TodoCounter_data img{
+    --img-size: 60px;
+    width: var(--img-size);
+    height: var(--img-size);
+    border-radius: 50%;
+    image-rendering: pixelated;
+}
+
+.TodoCounter_bar{
+    font-size: var(--sm);
+    /* border: 2px solid var(--primary); */
+    color: var(--black);
+    border-radius: 12px;
+    text-align: center;
+    width: 80%;
+    background-color: var(--white);
+}

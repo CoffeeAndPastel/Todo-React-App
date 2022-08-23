@@ -1,0 +1,15 @@
+@import url('./App.css');
+
+.CreateTodoButton{
+    border: none;
+    font-size: var(--bg);
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    right: 5%; 
+    border-radius: 50%;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary);
+}

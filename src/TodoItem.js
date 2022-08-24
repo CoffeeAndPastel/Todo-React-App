@@ -2,12 +2,25 @@ import React from "react";
 import './TodoItem.css'
 
 function TodoItem(props){
+    const onClomplete = () => {
+        alert('You complete ✔ the trask: ' + props.text)
+    }
+    const onDelete = () => {
+        alert('You delete 🗑 the trask: ' + props.text)
+    }
+
     return(
         <li className="TodoItem">
-            <label className="TodoItem_checkButton">
-                <input type="checkbox"/>
-            </label>
-            <div className={`TodoItem_task ${props.completed && 'completed'}`}>
+            <span 
+                className="TodoItem_checkButton"
+                onClick={onClomplete}
+            >
+                ✔
+            </span>
+            <div 
+                className={`TodoItem_task ${props.completed && 'completed'}`}
+                onClick={onDelete}
+            >
                 <p>{props.text}</p>
                 <span>X</span>
             </div>

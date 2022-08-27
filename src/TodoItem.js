@@ -12,11 +12,9 @@ function TodoItem(props){
     return(
         <li className="TodoItem">
             <span 
-                className="TodoItem_checkButton"
+                className={`TodoItem_checkButton ${props.completed && 'completed'}`}
                 onClick={onClomplete}
-            >
-                ✔
-            </span>
+            ><div></div></span>
             <div 
                 className={`TodoItem_task ${props.completed && 'completed'}`}
                 onClick={onDelete}

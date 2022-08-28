@@ -11,10 +11,13 @@ function TodoItem(props){
             ><div></div></span>
             <div 
                 className={`TodoItem_task ${props.completed && 'completed'}`}
-                onClick={props.onDelete}
             >
                 <p>{props.text}</p>
-                <span>X</span>
+                <span
+                    onClick={props.onDelete}
+                >
+                    X
+                </span>
             </div>
         </li>
     )

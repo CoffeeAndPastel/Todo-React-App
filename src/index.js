@@ -8,3 +8,8 @@ root.render(
     <App />
 );
 
+// const portal = ReactPORTAL.createPortal(document.getElementById('model'))
+// portal.render(
+
+// )
+

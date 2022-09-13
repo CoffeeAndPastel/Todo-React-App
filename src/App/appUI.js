@@ -6,6 +6,7 @@ import { TodoItem } from "../TodoItem";
 import { TodoList } from "../TodoList";
 import { TodoSearch } from "../TodoSearch";
 import { Modal } from "../Modal";
+import { TodoForm } from "../TodoForm";
 
 function AppUI() {
   const {
@@ -25,7 +26,7 @@ function AppUI() {
       <TodoList>
         {loading && <p>We are looking for data 🔎...</p>}
         {error && <p>We have a trouble 🤪</p>}
-        {(searchedTodos.length === 0) && <p>Write your first todo ✍</p>}
+        {!loading && (searchedTodos.length === 0) && <p>Write your first todo ✍</p>}
         {false}
         {true}
 
@@ -42,7 +43,7 @@ function AppUI() {
 
       {!!openModal &&(
         <Modal>
-          <p>Portal</p>
+          <TodoForm/>
         </Modal>
       )}
 

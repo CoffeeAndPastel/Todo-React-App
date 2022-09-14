@@ -12,11 +12,17 @@ html, body{
   --bg: 20px;
   --md: 16px;
   --sm: 12px;
+  --max_width: 400px;
 }
 
 body{
   font-family: 'Ubuntu', sans-serif;
   background-color: var(--background);
   color: var(--black);
+}
+
+.pageContent{
+  margin: 0 auto;
+  max-width: var(--max_width);
 }
 

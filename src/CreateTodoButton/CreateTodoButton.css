@@ -1,3 +1,5 @@
+
+
 .CreateTodoButton{
     border: none;
     font-size: var(--bg);
@@ -5,11 +7,19 @@
     position: absolute;
     color: var(--white);
     bottom: 5%;
-    right: 5%; 
     border-radius: 50%;
     padding: 4px;
+    margin-left: 332px;
     width: 32px;
     height: 32px;
     background-color: var(--primary);
     z-index: 1;
+}
+
+@media (max-width: 400px){
+    .CreateTodoButton{
+        right: 5%;
+        margin-left: 0px;
+
+    }
 }
